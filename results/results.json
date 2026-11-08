@@ -1,0 +1,206 @@
+{
+ "setup": {
+  "period": 32,
+  "window_half_width": 4,
+  "budget": 14,
+  "epochs_per_phase": 250,
+  "walkers_per_epoch": 100,
+  "seeds": "101..120",
+  "note": "window task: a train counts only if its total delay lands in the target window; plain task: any arrival counts"
+ },
+ "window_task": {
+  "static": {
+   "learn": {
+    "worlds": 20,
+    "final_route_ok": 4,
+    "median_cost_over_oracle": 8.181,
+    "median_epochs_to_ok": 5,
+    "mean_walker_window_rate_last20": 0.148
+   },
+   "after_cut": {
+    "worlds": 20,
+    "final_route_ok": 5,
+    "median_cost_over_oracle": 4.747,
+    "median_epochs_to_ok": 5,
+    "mean_walker_window_rate_last20": 0.144
+   },
+   "after_retarget": {
+    "worlds": 20,
+    "final_route_ok": 3,
+    "median_cost_over_oracle": 9.131,
+    "median_epochs_to_ok": 5,
+    "mean_walker_window_rate_last20": 0.133
+   }
+  },
+  "flow": {
+   "learn": {
+    "worlds": 20,
+    "final_route_ok": 5,
+    "median_cost_over_oracle": 2.845,
+    "median_epochs_to_ok": 20,
+    "mean_walker_window_rate_last20": 0.247
+   },
+   "after_cut": {
+    "worlds": 20,
+    "final_route_ok": 7,
+    "median_cost_over_oracle": 2.161,
+    "median_epochs_to_ok": 15,
+    "mean_walker_window_rate_last20": 0.251
+   },
+   "after_retarget": {
+    "worlds": 20,
+    "final_route_ok": 6,
+    "median_cost_over_oracle": 2.669,
+    "median_epochs_to_ok": 35,
+    "mean_walker_window_rate_last20": 0.263
+   }
+  },
+  "timing": {
+   "learn": {
+    "worlds": 20,
+    "final_route_ok": 14,
+    "median_cost_over_oracle": 1.491,
+    "median_epochs_to_ok": 7.5,
+    "mean_walker_window_rate_last20": 0.632
+   },
+   "after_cut": {
+    "worlds": 20,
+    "final_route_ok": 13,
+    "median_cost_over_oracle": 1.657,
+    "median_epochs_to_ok": 5,
+    "mean_walker_window_rate_last20": 0.661
+   },
+   "after_retarget": {
+    "worlds": 20,
+    "final_route_ok": 19,
+    "median_cost_over_oracle": 1.879,
+    "median_epochs_to_ok": 10,
+    "mean_walker_window_rate_last20": 0.695
+   }
+  },
+  "tero": {
+   "learn": {
+    "worlds": 20,
+    "final_route_ok": 1,
+    "median_cost_over_oracle": 1,
+    "median_epochs_to_ok": 5,
+    "mean_walker_window_rate_last20": 0
+   },
+   "after_cut": {
+    "worlds": 20,
+    "final_route_ok": 3,
+    "median_cost_over_oracle": 1,
+    "median_epochs_to_ok": 5,
+    "mean_walker_window_rate_last20": 0
+   },
+   "after_retarget": {
+    "worlds": 20,
+    "final_route_ok": 5,
+    "median_cost_over_oracle": 1,
+    "median_epochs_to_ok": 10,
+    "mean_walker_window_rate_last20": 0
+   }
+  }
+ },
+ "plain_task": {
+  "static": {
+   "learn": {
+    "worlds": 20,
+    "final_route_ok": 20,
+    "median_cost_over_oracle": 8.522,
+    "median_epochs_to_ok": 5,
+    "mean_walker_window_rate_last20": 0.148
+   },
+   "after_cut": {
+    "worlds": 20,
+    "final_route_ok": 20,
+    "median_cost_over_oracle": 8.769,
+    "median_epochs_to_ok": 5,
+    "mean_walker_window_rate_last20": 0.144
+   },
+   "after_retarget": {
+    "worlds": 20,
+    "final_route_ok": 20,
+    "median_cost_over_oracle": 9.24,
+    "median_epochs_to_ok": 5,
+    "mean_walker_window_rate_last20": 0.133
+   }
+  },
+  "flow": {
+   "learn": {
+    "worlds": 20,
+    "final_route_ok": 19,
+    "median_cost_over_oracle": 3.14,
+    "median_epochs_to_ok": 5,
+    "mean_walker_window_rate_last20": 0.247
+   },
+   "after_cut": {
+    "worlds": 20,
+    "final_route_ok": 20,
+    "median_cost_over_oracle": 2.519,
+    "median_epochs_to_ok": 5,
+    "mean_walker_window_rate_last20": 0.251
+   },
+   "after_retarget": {
+    "worlds": 20,
+    "final_route_ok": 20,
+    "median_cost_over_oracle": 2.598,
+    "median_epochs_to_ok": 5,
+    "mean_walker_window_rate_last20": 0.263
+   }
+  },
+  "tero": {
+   "learn": {
+    "worlds": 20,
+    "final_route_ok": 20,
+    "median_cost_over_oracle": 1,
+    "median_epochs_to_ok": 5,
+    "mean_walker_window_rate_last20": 0
+   },
+   "after_cut": {
+    "worlds": 20,
+    "final_route_ok": 20,
+    "median_cost_over_oracle": 1,
+    "median_epochs_to_ok": 5,
+    "mean_walker_window_rate_last20": 0
+   },
+   "after_retarget": {
+    "worlds": 20,
+    "final_route_ok": 20,
+    "median_cost_over_oracle": 1,
+    "median_epochs_to_ok": 5,
+    "mean_walker_window_rate_last20": 0
+   }
+  }
+ },
+ "trap": {
+  "gamma1_w0.02": {
+   "worlds": 20,
+   "median_head_start_route_cost_over_oracle": 1.883,
+   "final_route_ok": 11,
+   "median_final_cost_over_oracle": 1.162,
+   "still_on_head_start_route_or_failed": 12
+  },
+  "gamma2_w0.02": {
+   "worlds": 20,
+   "median_head_start_route_cost_over_oracle": 1.883,
+   "final_route_ok": 15,
+   "median_final_cost_over_oracle": 2.138,
+   "still_on_head_start_route_or_failed": 15
+  },
+  "gamma2_w0.002": {
+   "worlds": 20,
+   "median_head_start_route_cost_over_oracle": 1.883,
+   "final_route_ok": 19,
+   "median_final_cost_over_oracle": 2.059,
+   "still_on_head_start_route_or_failed": 20
+  },
+  "gamma3_w0.002_rho0.01": {
+   "worlds": 20,
+   "median_head_start_route_cost_over_oracle": 1.883,
+   "final_route_ok": 20,
+   "median_final_cost_over_oracle": 1.883,
+   "still_on_head_start_route_or_failed": 20
+  }
+ }
+}
